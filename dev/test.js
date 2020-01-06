@@ -10,4 +10,9 @@ Blockchain1.createNewTransaction(45, "David", "Lehner");
 Blockchain1.createNewBlock(2421, "KLF883djYUIJ43KJF", "FJK39OpdsfJJ398esJ");
 
 //console.log(Blockchain1);
-console.log(Blockchain1.chain[2]);
+console.log(Blockchain1.chain[3]["transactions"]);
+
+const blockData = Blockchain1.chain[3]["transactions"];
+const hash = "NFE998s8ajfAJJAW3";
+
+console.log(Blockchain1.proofOfWork(hash, blockData));

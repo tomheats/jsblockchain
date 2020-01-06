@@ -5,6 +5,8 @@ class Blockchain{
   constructor(){
     this.chain = [];
     this.pendingTransactions = [];
+
+    this.createNewBlock(0, "0", "0");
   }
 
   createNewBlock(nonce, prevBlockHash, hash){
